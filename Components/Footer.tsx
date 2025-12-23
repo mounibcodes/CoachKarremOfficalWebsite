@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <h3 className="font-black uppercase text-lg">Connect</h3>
             <div className="flex flex-col gap-2 font-bold text-sm uppercase">
-              <Link href="#" className="hover:underline decoration-2 underline-offset-4">Instagram</Link>
+              <Link href="https://instagram.com/kareem_hoops" target="_blank" className="hover:underline decoration-2 underline-offset-4">Instagram</Link>
               <Link href="#" className="hover:underline decoration-2 underline-offset-4">Twitter</Link>
               <Link href="#" className="hover:underline decoration-2 underline-offset-4">Email</Link>
             </div>

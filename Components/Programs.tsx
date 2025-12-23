@@ -67,8 +67,8 @@ export default function Programs() {
           <div className="text-center border-b-2 border-white pb-6">
             <h3 className="text-2xl font-black uppercase mb-2">Hybrid Athlete</h3>
             <div className="flex flex-col items-center">
-              <span className="text-5xl font-black tracking-tighter">€250</span>
-              <span className="text-sm font-bold text-white uppercase">~60,000 DZD</span>
+              <span className="text-5xl font-black tracking-tighter">€225</span>
+              <span className="text-sm font-bold text-white uppercase">~54,000 DZD</span>
             </div>
           </div>
           <ul className="flex flex-col gap-4 font-bold text-sm uppercase">
@@ -109,8 +109,8 @@ export default function Programs() {
           <div className="text-center border-b-2 border-black pb-6">
             <h3 className="text-2xl font-black uppercase mb-2">Pro Mentorship</h3>
             <div className="flex flex-col items-center">
-              <span className="text-5xl font-black tracking-tighter">€350</span>
-              <span className="text-sm font-bold text-black uppercase">~84,000 DZD</span>
+              <span className="text-5xl font-black tracking-tighter">€450</span>
+              <span className="text-sm font-bold text-black uppercase">~108,000 DZD</span>
             </div>
           </div>
           <ul className="flex flex-col gap-4 font-bold text-sm uppercase">
@@ -136,7 +136,8 @@ export default function Programs() {
             </li>
           </ul>
           <Link 
-            href="/Contact" 
+            href="https://instagram.com/kareem_hoops"
+            target="_blank"
             className="bg-black text-white px-6 py-3 rounded-full font-black uppercase text-center hover:bg-white hover:text-black hover:border-black border-2 border-transparent transition-colors mt-auto"
           >
             Apply Now
