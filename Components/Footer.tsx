@@ -36,8 +36,8 @@ export default function Footer() {
 
         <div className="flex flex-col gap-4 items-start md:items-end">
            <Link 
-            href="#contact" 
-            className="bg-black text-white px-8 py-3 rounded-full font-bold uppercase text-sm hover:bg-neutral-800 transition-all active:scale-95 hover:shadow-lg"
+            href="/Contact" 
+            className="bg-black text-white px-8 py-3 rounded-full font-bold uppercase text-sm border-2 border-transparent hover:bg-white hover:text-black hover:border-black transition-all active:scale-95 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
           >
             Start Now
           </Link>

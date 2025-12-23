@@ -13,12 +13,12 @@ export default function Hero() {
           Build A <span className="underline decoration-8 underline-offset-8">Hybrid</span> Body.
         </h1>
         
-        <p className="text-xl md:text-2xl font-bold text-neutral-600 max-w-2xl uppercase tracking-wide">
+        <p className="text-xl md:text-2xl font-bold text-black max-w-2xl uppercase tracking-wide">
           Stop choosing between strength and endurance. Master both.
         </p>
 
         <Link 
-          href="#contact" 
+          href="/Contact" 
           className="group flex items-center gap-3 bg-black text-white px-12 py-6 rounded-full font-black uppercase text-xl border-4 border-black hover:bg-white hover:text-black transition-all hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 active:translate-y-0 active:shadow-none"
         >
           Start Your Transformation
@@ -29,7 +29,7 @@ export default function Hero() {
       </div>
 
       {/* Video/Image Placeholder */}
-      <div className="relative w-full aspect-[4/5] lg:aspect-square bg-neutral-100 border-4 border-black rounded-[2rem] shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] overflow-hidden group cursor-pointer hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[20px_20px_0px_0px_rgba(0,0,0,1)] transition-all">
+      <div className="relative w-full aspect-[4/5] lg:aspect-square bg-white border-4 border-black rounded-[2rem] shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] overflow-hidden group cursor-pointer hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[20px_20px_0px_0px_rgba(0,0,0,1)] transition-all">
         <Image 
             src="/karremhoops.jpg" 
             alt="Coach Kareem" 
