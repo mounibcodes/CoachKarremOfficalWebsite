@@ -57,11 +57,6 @@ const workSans = localFont({
   variable: "--font-work-sans",
 });
 
-
-
-
-
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -87,9 +82,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${workSans.variable} antialiased flex flex-col min-h-screen`}
       >
-        <Nav/>
+        <Nav />
         {children}
-      <Footer/>
+        <Footer />
       </body>
     </html>
   );
