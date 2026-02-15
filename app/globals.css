@@ -2,7 +2,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #000000;
+  --foreground: #1a0d2e;
+  --qoodwa-purple: #4a1a6b;
+  --qoodwa-purple-dark: #2d0f47;
+  --qoodwa-purple-light: #6b3a8f;
+  --qoodwa-purple-gradient: linear-gradient(135deg, #4a1a6b 0%, #6b3a8f 50%, #8b5fb3 100%);
+  --qoodwa-orange: #ff8c42;
+  --qoodwa-yellow: #ffc947;
 }
 
 @theme inline {
@@ -22,3 +28,29 @@ body {
   font-family: var(--font-work-sans), system-ui, sans-serif;
 }
 
+/* Arabic font-face */
+@font-face {
+  font-family: 'SFArabicBlack';
+  src: url('/Fonts/sf-arabic-black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --font-sf-pro-arabic: 'SFArabicBlack', system-ui, sans-serif;
+}
+
+/* Arabic font support */
+.sf-arabic, [lang="ar"],
+[dir="rtl"],
+html[lang="ar"],
+html[dir="rtl"] {
+  font-family: var(--font-sf-pro-arabic), var(--font-work-sans), system-ui, sans-serif;
+}
+
+/* Ensure RTL layout for Arabic */
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+  
