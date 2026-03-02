@@ -3,20 +3,20 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    question: "What age groups do you train?",
-    answer: "I train athletes of all ages, from youth players just starting out to high school, college, and professional athletes looking to refine their game."
+    question: "Do I need prior experience?",
+    answer: "For our Basic Video Editing course, no prior experience is needed. We start from scratch. For Advanced and Motion Design, some familiarity with the software is recommended."
   },
   {
-    question: "Do you offer online coaching?",
-    answer: "Yes! My online coaching programs are designed to give you the same elite-level training plans, nutrition guidance, and mentorship, no matter where you are in the world."
+    question: "What software do I need?",
+    answer: "You will need a computer capable of running Adobe Premiere Pro and After Effects. We will guide you on how to set up your workspace in the first session."
   },
   {
-    question: "How do I book a session?",
-    answer: "You can book a session directly through the 'Programs' section on this website. Choose the package that fits your needs and schedule your time slot."
+    question: "Are the sessions live or recorded?",
+    answer: "It depends on the program. Basic is mostly recorded with weekly check-ins. Advanced and Motion Design feature a mix of live workshops and recorded modules for flexibility."
   },
   {
-    question: "What equipment do I need?",
-    answer: "For skill training, a basketball and a hoop are essential. For strength and conditioning, access to a gym is recommended, but I also provide bodyweight programs for home workouts."
+    question: "Do you help with job placement?",
+    answer: "Yes! Our top students are recommended to our agency partners. We also dedicate a full module to building your portfolio and finding your first freelance clients."
   }
 ];
 
@@ -30,12 +30,12 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-20 px-4 max-w-7xl mx-auto flex flex-col gap-12">
       <div className="flex flex-col gap-4 items-center text-center">
-        <div className="inline-block bg-black text-white px-6 py-2 rounded-full font-bold uppercase text-sm w-fit rotate-[-2deg]">
+        <div className="inline-block bg-[#963fdb] text-white px-6 py-2 rounded-full font-bold uppercase text-sm w-fit rotate-[-2deg]">
           Got Questions?
         </div>
-        <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9]">
+        <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] text-white">
           Frequently Asked <br/>
-          <span className="text-black decoration-8 underline underline-offset-8 decoration-black">Questions</span>
+          <span className="text-[#963fdb] decoration-8 underline underline-offset-8 decoration-[#963fdb]">Questions</span>
         </h2>
       </div>
 
@@ -45,13 +45,13 @@ export default function FAQ() {
             key={index}
             onClick={() => toggleFAQ(index)}
             className={`
-              bg-white border-4  border-black rounded-2xl p-6 cursor-pointer transition-all duration-300
-              ${openIndex === index ? 'shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] translate-x-[-4px] translate-y-[-4px]' : 'shadow-none hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]'}
+              bg-[#17052b] border-4  border-[#963fdb] rounded-2xl p-6 cursor-pointer transition-all duration-300
+              ${openIndex === index ? 'shadow-[8px_8px_0px_0px_rgba(70,4,88,1)] translate-x-[-4px] translate-y-[-4px]' : 'shadow-none hover:shadow-[4px_4px_0px_0px_rgba(70,4,88,1)]'}
             `}
           >
             <div className="flex justify-between items-center gap-4">
-              <h3 className="text-xl md:text-2xl font-black uppercase text-black">{faq.question}</h3>
-              <div className={`text-2xl font-black transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}>
+              <h3 className="text-xl md:text-2xl font-black uppercase text-white">{faq.question}</h3>
+              <div className={`text-2xl font-black transition-transform duration-300 text-white ${openIndex === index ? 'rotate-180' : ''}`}>
                 ▼
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function FAQ() {
               className={`grid transition-all duration-300 ease-in-out ${openIndex === index ? 'grid-rows-[1fr] opacity-100 mt-4' : 'grid-rows-[0fr] opacity-0'}`}
             >
               <div className="overflow-hidden">
-                <p className="text-lg font-medium text-black leading-relaxed">
+                <p className="text-lg font-medium text-purple-800 leading-relaxed">
                   {faq.answer}
                 </p>
               </div>
